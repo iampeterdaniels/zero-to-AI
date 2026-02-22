@@ -30,8 +30,8 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 -  3  -  [A Python CLI (Command Line Interface) Program](docs/session-a-python-cli-program.md)
 -  4  -  [A Python UI app with Streamlit](docs/session-a-python-ui-app-with-streamlit.md)
 -  CLB -  [Command Line Basics and Catch-up Session](docs/command-line-cheat-sheet.md)
--  5  -  [Data Wrangling](docs/session-not-available.md)
--  6  -  [Notebooks, Jupyter, Dataframes, Pandas](docs/session-not-available.md)
+-  5  -  [Data Wrangling](docs/session-data-wrangling.md)
+-  6  -  [Notebooks, Jupyter, Dataframes, Pandas](docs/session-jupyter-notebooks.md)
 -  7  -  [Unit Testing, CI/CD. and Python Datatypes](docs/session-not-available.md)
 -  8  -  [IDEs and Tooling - VSC, GitHub Copilot, Cursor](docs/session-not-available.md)
 
