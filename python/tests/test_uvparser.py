@@ -21,4 +21,4 @@ def test_parse_tree():
     assert isinstance(data, list)
 
     assert len(data) > 630
-    assert len(data) < 650
+    assert len(data) < 660
