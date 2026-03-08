@@ -15,6 +15,7 @@ def test_parse_pip_list():
     assert len(data) > 280
     assert len(data) < 300
 
+
 def test_parse_tree():
     uvp = UVParser()
     data = uvp.parse_tree()

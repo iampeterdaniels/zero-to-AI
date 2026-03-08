@@ -37,7 +37,7 @@ class AOAIUtil:
             if self.completions_client is None:
                 print("Lazy-initializing the completions client")
                 print(f"url: {url}")
-                #print(f"key: {key}")
+                # print(f"key: {key}")
                 print(f"version: {vers}")
                 print(f"deployment: {dep}")
                 self.completions_client = AzureOpenAI(
@@ -95,7 +95,7 @@ class AOAIUtil:
             if self.embeddings_client is None:
                 print("Lazy-initializing the embeddings client")
                 print(f"url: {url}")
-                #print(f"key: {key}")
+                # print(f"key: {key}")
                 print(f"version: {vers}")
                 print(f"deployment: {dep}")
                 self.embeddings_client = AzureOpenAI(

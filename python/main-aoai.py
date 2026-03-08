@@ -49,7 +49,7 @@ async def check_env():
 
 
 async def tokens():
-    #print("sys.argv:   {}".format(sys.argv))
+    # print("sys.argv:   {}".format(sys.argv))
     sentence = " ".join(sys.argv[2:])
     print("sentence:   {}".format(sentence))
     encoding = tiktoken.encoding_for_model("gpt-4o-mini")
@@ -95,6 +95,7 @@ def generate_embedding_original():
     # Model:  text-embedding-ada-002
     # Usage:  Usage(prompt_tokens=9, total_tokens=9)
     # Length: 1536
+
 
 async def generate_embedding():
     ai_util = AOAIUtil()

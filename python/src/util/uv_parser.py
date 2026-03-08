@@ -89,19 +89,19 @@ class UVParser:
             if idx == lib_index:
                 if lib["name"] == lib_name:
                     located = True
-                    #print(f"located: {lib_name} at index {idx}")
+                    # print(f"located: {lib_name} at index {idx}")
             else:
                 if located:
                     if lib["level"] != dep_level:
                         located = False
-                        #print(f"dislocated: {lib_name} at index {idx}")
+                        # print(f"dislocated: {lib_name} at index {idx}")
                     else:
                         dep = lib["name"]
                         dep_idx = lib["index"]
-                        #print(f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}")
+                        # print(f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}")
                         dependencies.append(dep)
         lib["dependencies"] = dependencies
-        #print(f"lib {lib_name} -> {dependencies}")
+        # print(f"lib {lib_name} -> {dependencies}")
 
     def indent_to_level(self, indent: int) -> int:
         if indent == 2:

@@ -20,12 +20,11 @@ Usage:
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
 # Wrangling the Cosmos DB Data:
-# 0) run venv.sh 
-# 1) python main-wrangling.py gen_pypi_download_lib_json_script 
+# 0) run venv.sh
+# 1) python main-wrangling.py gen_pypi_download_lib_json_script
 # 2) ./pypi_download_lib_json.sh  (execute the generated script)
-# 3) python main-wrangling.py create_cosmosdb_pypi_lib_documents 
-# 4) python main-wrangling.py add_embeddings_to_cosmosdb_documents 
-
+# 3) python main-wrangling.py create_cosmosdb_pypi_lib_documents
+# 4) python main-wrangling.py add_embeddings_to_cosmosdb_documents
 
 import asyncio
 import json
@@ -78,11 +77,12 @@ async def create_database(dbname: str, db_ru: int):
         logging.info(traceback.format_exc())
     await cosmos.close()
 
+
 async def delete_database(dbname: str):
     try:
         cosmos = CosmosNoSqlUtil()
         await cosmos.initialize()
-        result =await cosmos.delete_database(dbname)
+        result = await cosmos.delete_database(dbname)
         print(f"delete_database result: {result}")
     except Exception as e:
         logging.info(str(e))
@@ -101,6 +101,7 @@ async def create_container(dbname, cname, pkpath, c_ru, idx_policy_filename=None
         logging.info(traceback.format_exc())
     await cosmos.close()
 
+
 async def delete_container(dbname, cname):
     try:
         cosmos = CosmosNoSqlUtil()
@@ -111,6 +112,7 @@ async def delete_container(dbname, cname):
         logging.info(str(e))
         logging.info(traceback.format_exc())
     await cosmos.close()
+
 
 async def list_containers(dbname: str):
     try:
@@ -124,6 +126,7 @@ async def list_containers(dbname: str):
         logging.info(str(e))
         logging.info(traceback.format_exc())
     await cosmos.close()
+
 
 async def load_airports(dbname: str, cname: str, pkpath: str):
     try:
@@ -194,6 +197,7 @@ async def load_airports(dbname: str, cname: str, pkpath: str):
     if nosql_util is not None:
         await nosql_util.close()
     print("load_airports completed")
+
 
 async def load_pypi_libs(dbname: str, cname: str, pkpath: str):
     try:

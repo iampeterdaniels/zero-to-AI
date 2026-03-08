@@ -37,10 +37,11 @@ def check_env():
     conn_str = Env.azure_storage_conn_string()
     print(f"Env.azure_storage_conn_string(): {conn_str}")
 
+
 def execute_examples(sleep_time: int = 3):
     print("\n===== StorageUtil constructor")
     conn_str = Env.azure_storage_conn_string()
-    #print(f"conn_str: {conn_str}")
+    # print(f"conn_str: {conn_str}")
     storage_util = StorageUtil(conn_str, logging_level=None)
     time.sleep(sleep_time)
 
