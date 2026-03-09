@@ -34,10 +34,10 @@
   {
     "index": 4,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 4,
     "indent": 14,
-    "suffix": "azure-core v1.36.0"
+    "suffix": "azure-core v1.38.2"
   },
   {
     "index": 5,
@@ -186,10 +186,10 @@
   {
     "index": 23,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 4,
     "indent": 14,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 24,
@@ -202,10 +202,10 @@
   {
     "index": 25,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 5,
     "indent": 18,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 26,
@@ -250,10 +250,10 @@
   {
     "index": 31,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 5,
     "indent": 18,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 32,
@@ -274,10 +274,10 @@
   {
     "index": 34,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 6,
     "indent": 22,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 35,
@@ -1466,10 +1466,10 @@
   {
     "index": 183,
     "name": "openai",
-    "version": "v2.14.0",
+    "version": "v2.26.0",
     "level": 3,
     "indent": 10,
-    "suffix": "openai v2.14.0"
+    "suffix": "openai v2.26.0"
   },
   {
     "index": 184,
@@ -1842,10 +1842,10 @@
   {
     "index": 230,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 231,
@@ -1874,10 +1874,10 @@
   {
     "index": 234,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 235,
@@ -1914,10 +1914,10 @@
   {
     "index": 239,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 240,
@@ -1938,10 +1938,10 @@
   {
     "index": 242,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 3,
     "indent": 10,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 243,
@@ -2042,10 +2042,10 @@
   {
     "index": 255,
     "name": "openai",
-    "version": "v2.14.0",
+    "version": "v2.26.0",
     "level": 2,
     "indent": 6,
-    "suffix": "openai v2.14.0 (*)"
+    "suffix": "openai v2.26.0 (*)"
   },
   {
     "index": 256,
@@ -2122,10 +2122,10 @@
   {
     "index": 265,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 266,
@@ -2170,10 +2170,10 @@
   {
     "index": 271,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 272,
@@ -2194,10 +2194,10 @@
   {
     "index": 274,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 1,
     "indent": 2,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 275,
@@ -2210,18 +2210,18 @@
   {
     "index": 276,
     "name": "azure-cosmos",
-    "version": "v4.14.5",
+    "version": "v4.15.0",
     "level": 1,
     "indent": 2,
-    "suffix": "azure-cosmos v4.14.5"
+    "suffix": "azure-cosmos v4.15.0"
   },
   {
     "index": 277,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 278,
@@ -2250,10 +2250,10 @@
   {
     "index": 281,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 282,
@@ -2298,10 +2298,10 @@
   {
     "index": 287,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 3,
     "indent": 10,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 288,
@@ -2370,10 +2370,10 @@
   {
     "index": 296,
     "name": "azure-core",
-    "version": "v1.36.0",
+    "version": "v1.38.2",
     "level": 2,
     "indent": 6,
-    "suffix": "azure-core v1.36.0 (*)"
+    "suffix": "azure-core v1.38.2 (*)"
   },
   {
     "index": 297,
@@ -2434,10 +2434,10 @@
   {
     "index": 304,
     "name": "duckdb",
-    "version": "v1.4.3",
+    "version": "v1.5.0",
     "level": 1,
     "indent": 2,
-    "suffix": "duckdb v1.4.3"
+    "suffix": "duckdb v1.5.0"
   },
   {
     "index": 305,
@@ -4458,10 +4458,10 @@
   {
     "index": 557,
     "name": "openai",
-    "version": "v2.14.0",
+    "version": "v2.26.0",
     "level": 1,
     "indent": 2,
-    "suffix": "openai v2.14.0 (*)"
+    "suffix": "openai v2.26.0 (*)"
   },
   {
     "index": 558,

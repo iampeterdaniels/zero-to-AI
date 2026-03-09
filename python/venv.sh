@@ -21,15 +21,14 @@ echo "Activating the virtual environment ..."
 source .venv/bin/activate
 
 echo "Installing libraries ..."
-uv pip install --editable .
+uv pip install --prerelease=allow --editable .
 
-echo "Creating a requirements.txt file for users of pip instead of uv ..."
-uv pip compile pyproject.toml -o requirements.txt
+# echo "Creating a requirements.txt file for users of pip instead of uv ..."
+# uv pip compile pyproject.toml -o requirements.txt
 
 uv tree > data/uv/uv-tree.txt
-
-uv export --format cyclonedx1.5 > data/uv/uv-cyclonedx.json
-
+uv tree --outdated --depth=1 > tmp/uv-tree-outdated.txt
+ 
 echo "Listing the installed libraries ..."
 uv pip list > data/uv/uv-pip-list.txt
 uv pip list

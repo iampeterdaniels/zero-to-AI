@@ -9,7 +9,6 @@ from docopt import docopt
 from dotenv import load_dotenv
 
 import openai
-from openai import OpenAI
 from openai import AzureOpenAI
 from openai.types import CreateEmbeddingResponse
 from openai.types.chat.chat_completion import ChatCompletion
@@ -33,38 +32,37 @@ class AOAIUtil:
             key = os.getenv("AZURE_OPENAI_COMPLETIONS_KEY")
             dep = os.getenv("AZURE_OPENAI_COMPLETIONS_DEP")
             vers = os.getenv("AZURE_OPENAI_COMPLETIONS_VERSION")
+            #vers = "2024-12-01-preview"
+            #Azure OpenAI Responses API is enabled only for api-version 2025-03-01-preview and later
 
             if self.completions_client is None:
                 print("Lazy-initializing the completions client")
                 print(f"url: {url}")
-                # print(f"key: {key}")
+                print(f"key: {key}")
                 print(f"version: {vers}")
                 print(f"deployment: {dep}")
+                print(f"openai.__version__: {openai.__version__}")
                 self.completions_client = AzureOpenAI(
-                    api_key=key, api_version=vers, azure_endpoint=url
+                    api_version=vers, azure_endpoint=url, api_key=key
                 )
+                print(f"client type: {type(self.completions_client)}")
+                # <class 'openai.lib.azure.AzureOpenAI'>
 
-            # response = self.completions_client.chat.completions.create(
-            #     messages=[
-            #         {
-            #             "role": "system",
-            #             "content": "You are a helpful assistant.",
-            #         },
-            #         {
-            #             "role": "user",
-            #             "content": "I am going to Paris, what should I see?",
-            #         }
-            #     ],
-            #     max_completion_tokens=16384,
-            #     model=dep
-            # )
+            # Warning: Be aware of a SDK difference when using newer vs older models.
+            # The following code works with gpt-4.1-mini (first url below)but not with 
+            # gpt-5-mini (second url below) which uses the new Responses API.
+            # This codebase is currently awaiting the maturity of the new Responses API documentation.
+            # AZURE_OPENAI_COMPLETIONS_URL="https://xxx.cognitiveservices.azure.com/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"
+            # AZURE_OPENAI_COMPLETIONS_URL="https://xxx.cognitiveservices.azure.com/openai/responses?api-version=2025-04-01-preview"
 
             completion = self.completions_client.chat.completions.create(
-                model=dep,  # MUST be the deployment name, not necessarily the model name
+                model=dep,
                 messages=[
                     {"role": "system", "content": system_context},
                     {"role": "user", "content": user_prompt},
                 ],
+                stream=False,
+                max_completion_tokens=16384,
             )
 
             print("=== completion type ===")
@@ -82,6 +80,7 @@ class AOAIUtil:
 
         except Exception as e:
             print(f"Error generate_completion: {e}")
+            print(traceback.format_exc())
             return None
 
     async def generate_embeddings(self, text: str) -> list[float] | None:
