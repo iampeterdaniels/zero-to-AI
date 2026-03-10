@@ -43,8 +43,12 @@
 *.tfstate
 *.tfstate.*
 
+**/docs/private/
+**/meta/
+**/port*.sh
 **/private.*
-**python/*private.*
+**/pvt/
+**/python/*private*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
