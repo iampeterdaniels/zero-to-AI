@@ -28,7 +28,7 @@ Please get Python and uv installed on your computer in the days ahead.
   - Defined, in this series, in the **pyproject.toml file** - discussed below
   - See [azure-cosmos @ pypi](https://pypi.org/project/azure-cosmos/)
   - See [azure-storage @ pypi](https://pypi.org/project/azure-storage/)
-- Current python package manageroptions are pip, poetry, **uv**, and others
+- Current python package manager options are pip, poetry, **uv**, and others
   - This variety of options is typical of open-source
 - They determine and resolve the **Dependency Graph** for you 
   - For example, your app uses Library A 
@@ -339,6 +339,8 @@ for this series.
 
 This list will evolve over time as the course is developed,but you should see similar results.
 
+### uv pip list 
+
 ```
 $ uv pip list
 
@@ -555,6 +557,31 @@ zipp                                     3.23.0
 - The following is a visualization of the dependency graph for the zero-to-AI project
 - Execute it with the **uv tree** command
 - This graph will evolve over time, but you should see similar results
+
+### Incompatible dependencies (aka: "dependency hell") looks like this 
+
+When running the venv.ps1 or venv.sh script, you'll see an error similar to the following:
+
+```
+...
+Creating a new virtual environment in .venv ...
+Using CPython 3.14.3 interpreter at: /opt/homebrew/opt/python@3.14/bin/python3.14
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+Activating the virtual environment ...
+Installing libraries ...
+  × No solution found when resolving dependencies:
+  ╰─▶ Because toon-python was not found in the package registry and zero-to-ai==1.0.0 depends on toon-python, we can
+      conclude that zero-to-ai==1.0.0 cannot be used.
+      And because only zero-to-ai==1.0.0 is available and you require zero-to-ai, we can conclude that your
+      requirements are unsatisfiable.
+Creating a requirements.txt file for users of pip instead of uv ...
+  × No solution found when resolving dependencies:
+  ╰─▶ Because toon-python was not found in the package registry and zero-to-ai depends on toon-python, we can conclude
+      that your requirements are unsatisfiable.
+```
+
+### uv tree
 
 ```
 uv tree

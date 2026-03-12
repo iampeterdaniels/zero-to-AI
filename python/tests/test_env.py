@@ -22,7 +22,6 @@ def test_boolean_arg():
     assert Env.boolean_arg("--some-other-flag") is False
 
 
-
 # def test_cosmosdb_emulator_nosql_key():
 #     key = Env.cosmosdb_emulator_nosql_key()
 #     assert len(key) > 80

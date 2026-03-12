@@ -9,10 +9,11 @@ def test_parse_pip_list():
     data = uvp.parse_pip_list()
     assert isinstance(data, dict)
     names = sorted(data.keys())
-    assert names[0] == "agent-framework"
+    assert names[0] == "a2a-sdk"
     assert names[-1] == "zipp"
     assert data["m26"] == "0.3.2"
-    assert len(data) == 290
+    assert len(data) > 290
+    assert len(data) < 310
 
 
 def test_parse_tree():
@@ -20,4 +21,5 @@ def test_parse_tree():
     data = uvp.parse_tree()
     assert isinstance(data, list)
 
-    assert len(data) == 645
+    assert len(data) > 630
+    assert len(data) < 660

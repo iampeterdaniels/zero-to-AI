@@ -43,7 +43,7 @@ from dotenv import load_dotenv
 
 from geopy.geocoders import Nominatim
 
-from toon_python import encode, EncodeOptions, Delimiter
+from toon import encode
 
 from src.ai.aoai_util import AOAIUtil
 from src.io.fs import FS

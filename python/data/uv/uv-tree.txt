@@ -3,7 +3,7 @@ zero-to-ai v1.0.0
 │   └── agent-framework-core v1.0.0b251001
 │       ├── aiofiles v25.1.0
 │       ├── azure-identity v1.25.1
-│       │   ├── azure-core v1.36.0
+│       │   ├── azure-core v1.38.2
 │       │   │   ├── requests v2.32.5
 │       │   │   │   ├── certifi v2025.11.12
 │       │   │   │   ├── charset-normalizer v3.4.4
@@ -22,18 +22,18 @@ zero-to-ai v1.0.0
 │       │   │   └── msal v1.34.0 (*)
 │       │   └── typing-extensions v4.15.0
 │       ├── azure-monitor-opentelemetry v1.8.2
-│       │   ├── azure-core v1.36.0 (*)
+│       │   ├── azure-core v1.38.2 (*)
 │       │   ├── azure-core-tracing-opentelemetry v1.0.0b12
-│       │   │   ├── azure-core v1.36.0 (*)
+│       │   │   ├── azure-core v1.38.2 (*)
 │       │   │   └── opentelemetry-api v1.38.0
 │       │   │       ├── importlib-metadata v8.7.1
 │       │   │       │   └── zipp v3.23.0
 │       │   │       └── typing-extensions v4.15.0
 │       │   ├── azure-monitor-opentelemetry-exporter v1.0.0b45
-│       │   │   ├── azure-core v1.36.0 (*)
+│       │   │   ├── azure-core v1.38.2 (*)
 │       │   │   ├── azure-identity v1.25.1 (*)
 │       │   │   ├── msrest v0.7.1
-│       │   │   │   ├── azure-core v1.36.0 (*)
+│       │   │   │   ├── azure-core v1.38.2 (*)
 │       │   │   │   ├── certifi v2025.11.12
 │       │   │   │   ├── isodate v0.7.2
 │       │   │   │   ├── requests v2.32.5 (*)
@@ -182,7 +182,7 @@ zero-to-ai v1.0.0
 │       │   │   │   └── anyio v4.12.0 (*)
 │       │   │   └── websockets v15.0.1 (extra: standard)
 │       │   └── websockets v15.0.1 (extra: ws)
-│       ├── openai v2.14.0
+│       ├── openai v2.26.0
 │       │   ├── anyio v4.12.0 (*)
 │       │   ├── distro v1.9.0
 │       │   ├── httpx v0.28.1 (*)
@@ -229,19 +229,19 @@ zero-to-ai v1.0.0
 │   └── typing-extensions v4.15.0
 ├── av v16.0.1
 ├── azure-ai-agents v1.2.0b6
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-ai-documentintelligence v1.0.2
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-ai-evaluation v1.14.0
 │   ├── aiohttp v3.13.2 (*)
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── azure-identity v1.25.1 (*)
 │   ├── azure-storage-blob v12.27.1
-│   │   ├── azure-core v1.36.0 (*)
+│   │   ├── azure-core v1.38.2 (*)
 │   │   ├── cryptography v46.0.3 (*)
 │   │   ├── isodate v0.7.2
 │   │   └── typing-extensions v4.15.0
@@ -254,7 +254,7 @@ zero-to-ai v1.0.0
 │   │   ├── joblib v1.5.3
 │   │   ├── regex v2025.11.3
 │   │   └── tqdm v4.67.1
-│   ├── openai v2.14.0 (*)
+│   ├── openai v2.26.0 (*)
 │   ├── pandas v2.3.3
 │   │   ├── numpy v2.4.0
 │   │   ├── python-dateutil v2.9.0.post0 (*)
@@ -264,29 +264,29 @@ zero-to-ai v1.0.0
 │   └── ruamel-yaml v0.19.1
 ├── azure-ai-projects v1.0.0
 │   ├── azure-ai-agents v1.2.0b6 (*)
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── azure-storage-blob v12.27.1 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-ai-textanalytics v5.3.0
 │   ├── azure-common v1.1.28
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
-├── azure-core v1.36.0 (*)
+├── azure-core v1.38.2 (*)
 ├── azure-core-tracing-opentelemetry v1.0.0b12 (*)
-├── azure-cosmos v4.14.5
-│   ├── azure-core v1.36.0 (*)
+├── azure-cosmos v4.15.0
+│   ├── azure-core v1.38.2 (*)
 │   └── typing-extensions v4.15.0
 ├── azure-identity v1.25.1 (*)
 ├── azure-keyvault-secrets v4.10.0
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-mgmt-applicationinsights v4.1.0
 │   ├── azure-common v1.1.28
 │   ├── azure-mgmt-core v1.6.0
-│   │   └── azure-core v1.36.0 (*)
+│   │   └── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-mgmt-cognitiveservices v14.1.0
@@ -295,7 +295,7 @@ zero-to-ai v1.0.0
 │   └── typing-extensions v4.15.0
 ├── azure-search-documents v11.5.2
 │   ├── azure-common v1.1.28
-│   ├── azure-core v1.36.0 (*)
+│   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-storage-blob v12.27.1 (*)
@@ -303,7 +303,7 @@ zero-to-ai v1.0.0
 │   ├── soupsieve v2.8.1
 │   └── typing-extensions v4.15.0
 ├── docopt v0.6.2
-├── duckdb v1.4.3
+├── duckdb v1.5.0
 ├── faker v39.0.0
 │   └── tzdata v2025.3
 ├── fastapi[standard] v0.128.0
@@ -556,7 +556,7 @@ zero-to-ai v1.0.0
 │   ├── pillow v12.1.0
 │   ├── pyparsing v3.3.1
 │   └── python-dateutil v2.9.0.post0 (*)
-├── openai v2.14.0 (*)
+├── openai v2.26.0 (*)
 ├── opentelemetry-api v1.38.0 (*)
 ├── opentelemetry-exporter-otlp-proto-grpc v1.38.0 (*)
 ├── opentelemetry-instrumentation-httpx v0.59b0
@@ -603,6 +603,7 @@ zero-to-ai v1.0.0
 ├── python-dotenv v1.2.1
 ├── python-json-logger v4.0.0
 ├── python-multipart v0.0.21
+├── python-toon v0.1.3
 ├── pytz v2025.2
 ├── rdflib v7.5.0
 │   └── pyparsing v3.3.1
@@ -641,7 +642,6 @@ zero-to-ai v1.0.0
 ├── tiktoken v0.12.0
 │   ├── regex v2025.11.3
 │   └── requests v2.32.5 (*)
-├── toon-python v0.1.2
 ├── uvicorn v0.38.0 (*)
 └── watchdog v6.0.0
 (*) Package tree already displayed

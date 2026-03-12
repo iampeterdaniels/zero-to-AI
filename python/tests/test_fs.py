@@ -33,8 +33,7 @@ def test_list_files_in_dir():
     assert isinstance(files, list)
     print(files)
     assert "gettysburg-address.txt" in files
-    assert len(files) > 0
-    assert len(files) < 5
+    assert len(files) == 5
 
 
 def test_read():
